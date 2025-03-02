@@ -19,7 +19,8 @@ fn add_voidranger(mut commands: Commands) {
             Health{max: 134, current: 134},
             Attack(12),
             Defense(210),
-            Speed(120)
+            Speed(120),
+            Type(TypeEnum::Quantum)
         )
     );
 }
