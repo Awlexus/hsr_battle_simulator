@@ -6,7 +6,7 @@ mod enemies;
 use bevy::prelude::*;
 // use characters::destruction_trailblazer::DestructionTrailblazer;
 use components::common::*;
-use enemies::voidranger::Voidranger;
+// use enemies::voidranger::Voidranger;
 
 #[derive(Component)]
 struct Enemy;
