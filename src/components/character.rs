@@ -3,6 +3,27 @@ use bevy::prelude::*;
 use super::common;
 use super::common::*;
 
+#[derive(Bundle)]
+pub struct CharacterBundle {
+    character: Character,
+    name: common::Name,
+    level: Level,
+    health: Health,
+    attack: Attack,
+    defense: Defense,
+    speed: Speed,
+    crit_rate: CritRate,
+    crit_damage: CritDamage,
+    break_effect: BreakEffect,
+    energy: Energy,
+    energy_regeneration_rate: EnergyRegenerationRate,
+    outgoing_healing_boost: OutgoingHealingBoost,
+    effect_hit_rate: EffectHitRate,
+    effect_resistance: EffectResistance,
+    path: Path,
+    character_type: Type,
+}
+
 #[derive(Component)]
 pub struct Character;
 
