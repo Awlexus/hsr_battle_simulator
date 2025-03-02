@@ -7,6 +7,27 @@ use super::common::*;
 pub struct Character;
 
 #[derive(Component)]
+pub struct CritRate(pub f32);
+
+#[derive(Component)]
+pub struct CritDamage(pub f32);
+
+#[derive(Component)]
+pub struct BreakEffect(pub f32);
+
+#[derive(Component)]
+pub struct Energy {
+    pub current: f32,
+    pub max: f32,
+}
+
+#[derive(Component)]
+pub struct OutgoingHealingBoost(pub f32);
+
+#[derive(Component)]
+pub struct EnergyRegenerationRate(pub f32);
+
+#[derive(Component)]
 pub struct Path(PathEnum);
 
 #[derive(Component)]
