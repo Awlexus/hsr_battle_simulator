@@ -3,6 +3,7 @@ mod characters;
 mod components;
 mod enemies;
 
+use battle::battle::BattlePlugin;
 use bevy::prelude::*;
 // use characters::destruction_trailblazer::DestructionTrailblazer;
 use components::common::*;

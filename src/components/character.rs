@@ -22,6 +22,12 @@ pub struct CharacterBundle {
     effect_resistance: EffectResistance,
     path: Path,
     character_type: Type,
+    basic_attack: BasicATK,
+    skill: Skill,
+    ultimate: Ultimate,
+    talent: Talent,
+    major_traces: MajorTraces,
+    eidolons: Eidolons,
 }
 
 #[derive(Component)]
@@ -49,25 +55,25 @@ pub struct OutgoingHealingBoost(pub f32);
 pub struct EnergyRegenerationRate(pub f32);
 
 #[derive(Component)]
-pub struct Path(PathEnum);
+pub struct Path(pub PathEnum);
 
 #[derive(Component)]
-pub struct BasicATK(u32);
+pub struct BasicATK(pub u32);
 
 #[derive(Component)]
-pub struct Skill(u32);
+pub struct Skill(pub u32);
 
 #[derive(Component)]
-pub struct Ultimate(u32);
+pub struct Ultimate(pub u32);
 
 #[derive(Component)]
-pub struct Talent(u32);
+pub struct Talent(pub u32);
 
 #[derive(Component)]
-pub struct MajorTrace(u32);
+pub struct MajorTraces(pub (bool, bool, bool));
 
 #[derive(Component)]
-pub struct Eidolon(u32);
+pub struct Eidolons(pub u32);
 
 pub enum AbilityType {
     SingleTarget,
