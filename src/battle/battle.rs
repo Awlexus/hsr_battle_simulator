@@ -14,8 +14,7 @@ impl Plugin for BattlePlugin {
             .add_event::<UnitEntered>()
             .add_event::<UnitExited>()
             .add_event::<TurnEnqueued>()
-            .add_systems(Update, add_unit)
-            .add_systems(Update, enqueue_turn);
+            .add_systems(Update, (add_unit, enqueue_turn));
     }
 }
 
